@@ -10,11 +10,11 @@
 
     <Button
         android:id="@+id/Registrar_usuario"
-        android:layout_width="224dp"
-        android:layout_height="49dp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
         android:onClick="registrar"
         android:text="Registrar_usuario"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/productos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,11 +22,11 @@
         app:layout_constraintVertical_bias="0.488" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:id="@+id/productos"
+        android:layout_width="246dp"
+        android:layout_height="47dp"
+        android:text="Crear productos"
+        app:layout_constraintBottom_toTopOf="@+id/listar_usuarios"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,11 +34,11 @@
         app:layout_constraintVertical_bias="0.739" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        android:id="@+id/listar_usuarios"
+        android:layout_width="257dp"
+        android:layout_height="39dp"
+        android:text="Listar usuarios"
+        app:layout_constraintBottom_toTopOf="@+id/listar_productos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,10 +46,10 @@
         app:layout_constraintVertical_bias="0.819" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:id="@+id/listar_productos"
+        android:layout_width="245dp"
+        android:layout_height="44dp"
+        android:text="Listar productos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"

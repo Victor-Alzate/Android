@@ -1,7 +1,9 @@
 package com.example.sqlitep2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -38,6 +40,41 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button registrar_Usuario = (Button) findViewById(R.id.Registrar_usuario);
-        
+        Button crear_producto = (Button) findViewById(R.id.productos);
+        Button listar_Usuario = (Button) findViewById(R.id.listar_usuarios);
+        Button listar_productos = (Button) findViewById(R.id.listar_productos);
+
+
+        registrar_Usuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Crear_usuario.class);
+                startActivity(intent);
+            }
+        });
+
+        crear_producto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Crear_productos.class);
+                startActivity(intent);
+            }
+        });
+
+        listar_Usuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, List_user.class);
+                startActivity(intent);
+            }
+        });
+
+        listar_productos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Listar_productos.class);
+                startActivity(intent);
+            }
+        });
     }
 }
