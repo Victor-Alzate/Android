@@ -1,15 +1,7 @@
 package com.example.sqlitep2;
 
-<<<<<<< HEAD
 import android.os.Bundle;
 import android.util.Log;
-=======
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
->>>>>>> 7586d68a2960f84eae6b4d352aed0dce78d61f59
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -29,9 +21,8 @@ import com.example.sqlitep2.data.model.User;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class List_user extends AppCompatActivity {
 
-<<<<<<< HEAD
     private static final String TAG = "OUT1";
     DatabaseManager dbManager;
     private UserDao userDao;
@@ -40,22 +31,18 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private UserAdapter adapter;
     private List<User> userList;
-=======
-
->>>>>>> 7586d68a2960f84eae6b4d352aed0dce78d61f59
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_list_user);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-<<<<<<< HEAD
         DatabaseManager dbManager = DatabaseManager.getInstance(this);
         userDao = new UserDao(dbManager.openDatabase());
         productDao = new ProductDao(dbManager.openDatabase());
@@ -77,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         // Ejemplo de uso de ProductDao
         //exampleProductCrud();
     }
-
     private void exampleUserCrud() {
         // CREATE - Insertar 3 usuarios colombianos
         User user1 = new User("Carlos Rodríguez", "carlos.rodriguez@gmail.com","https://icons.iconarchive.com/icons/icons-land/vista-people/72/Office-Customer-Male-Light-icon.png");
@@ -156,44 +142,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         dbManager.closeDatabase();
-=======
-        Button registrar_Usuario = (Button) findViewById(R.id.Registrar_usuario);
-        Button crear_producto = (Button) findViewById(R.id.productos);
-        Button listar_Usuario = (Button) findViewById(R.id.listar_usuarios);
-        Button listar_productos = (Button) findViewById(R.id.listar_productos);
-
-
-        registrar_Usuario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Crear_usuario.class);
-                startActivity(intent);
-            }
-        });
-
-        crear_producto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Crear_productos.class);
-                startActivity(intent);
-            }
-        });
-
-        listar_Usuario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, List_user.class);
-                startActivity(intent);
-            }
-        });
-
-        listar_productos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Listar_productos.class);
-                startActivity(intent);
-            }
-        });
->>>>>>> 7586d68a2960f84eae6b4d352aed0dce78d61f59
     }
-}
+    }

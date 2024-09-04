@@ -15,6 +15,24 @@
         android:theme="@style/Theme.SQLiteP2"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".Listar_productos"
+            android:exported="false" />
+        <activity
+            android:name=".Crear_productos"
+            android:exported="false" />
+        <activity
+            android:name=".Listar_produco"
+            android:exported="false" />
+        <activity
+            android:name=".Crear_usuario"
+            android:exported="false" />
+        <activity
+            android:name=".List_user"
+            android:exported="false" />
+        <activity
+>>>>>>> 7586d68a2960f84eae6b4d352aed0dce78d61f59
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
