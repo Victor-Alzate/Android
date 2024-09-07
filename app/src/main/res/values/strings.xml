@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SQLiteP2</string>
+<<<<<<< HEAD
+    <string name="price">Price</string>
+=======
+>>>>>>> 7586d68a2960f84eae6b4d352aed0dce78d61f59
 </resources>
